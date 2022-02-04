@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeLibTest", "DateTime
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeLib", "DateTimeLib\DateTimeLib.csproj", "{5023BFFC-11CB-4FCB-9805-6BF2FA1E577E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeProject", "DateTimeProject\DateTimeProject.csproj", "{8463723F-8FBF-4F63-9F8C-0B5FD4BD7B8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5023BFFC-11CB-4FCB-9805-6BF2FA1E577E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5023BFFC-11CB-4FCB-9805-6BF2FA1E577E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5023BFFC-11CB-4FCB-9805-6BF2FA1E577E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8463723F-8FBF-4F63-9F8C-0B5FD4BD7B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8463723F-8FBF-4F63-9F8C-0B5FD4BD7B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8463723F-8FBF-4F63-9F8C-0B5FD4BD7B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8463723F-8FBF-4F63-9F8C-0B5FD4BD7B8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

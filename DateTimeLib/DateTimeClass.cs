@@ -59,6 +59,23 @@ namespace DateTimeLib
                 }
                 return dayBefore;
             }
+            /// <summary>
+            /// вычисление кол-ва дней до конца месяца
+            /// </summary>
+            /// <param name="date">дата</param>
+            /// <returns></returns>
+            public static int DaysUntilEndMonth(DateTime date)
+            {
+            int daysInMonth = 0;
+                if (CorrectDate(date.ToShortDateString()))
+                {
+                    daysInMonth = System.DateTime.DaysInMonth(date.Year, date.Month) - date.Day;
+
+                }
+            return daysInMonth;
+
+
+            }
 
 
 

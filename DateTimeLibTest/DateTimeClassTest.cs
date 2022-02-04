@@ -6,6 +6,9 @@ namespace DateTimeLibTest
     [TestClass]
     public class DateTimeClassTest
     {
+        /// <summary>
+        /// Проверка, что дата корректна
+        /// </summary>
         [TestMethod]
         public void PrevDate_CorrectDate_PrevDayReturn()
         {
