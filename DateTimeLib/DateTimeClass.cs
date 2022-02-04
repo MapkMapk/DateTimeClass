@@ -18,8 +18,17 @@ namespace DateTimeLib
     /// </summary>
     public class DateTimeClass
     {
-
-
+            /// <summary>
+            /// метод определяет является ли входящая дата корректной
+            /// </summary>
+            /// <param name="date">дата</param>
+            /// <returns>является ли дата корректной</returns>
+            public static bool CorrectDate(string date) 
+            {
+            DateTime dt = new DateTime();
+            if (DateTime.TryParse(date, out dt) == false) {return false; }
+            else { return true; }
+            }
             /// <summary>
             /// метод определяет дату предыдущего дня.
             /// </summary>
@@ -27,11 +36,31 @@ namespace DateTimeLib
             /// <returns>дату вчерашнего дня</returns>
             public static DateTime PrevDate(DateTime date)
             {
-                DateTime dayBefore = date.AddDays(-1);
+                DateTime dayBefore = new DateTime();
+                if (CorrectDate(Convert.ToString(date)))
+                {
+                    dayBefore = date.AddDays(-1);
+                    
+                }
                 return dayBefore;
             }
-        
-    
+            /// <summary>
+            /// метод определяет дату следующего дня
+            /// </summary>
+            /// <param name="date">дата</param>
+            /// <returns>дата следующего дня</returns>
+            public static DateTime NextDate(DateTime date)
+            {   
+                DateTime dayBefore = new DateTime();
+                if (CorrectDate(Convert.ToString(date)))
+                {
+                    dayBefore = date.AddDays(+1);
+                    
+                }
+                return dayBefore;
+            }
+
+
 
     }
 }
