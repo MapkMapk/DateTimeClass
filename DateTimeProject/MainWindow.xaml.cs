@@ -38,10 +38,37 @@ namespace DateTimeProject
             else
             {
                 ResultDatePicker.BorderBrush = Brushes.Gray; 
+                
                 string prevDateString = DateTimeClass.PrevDate(ResultDatePicker.SelectedDate.Value).ToShortDateString();
                 string nextDateString = DateTimeClass.NextDate(ResultDatePicker.SelectedDate.Value).ToShortDateString();
                 string daysInMonthDateString = DateTimeClass.DaysUntilEndMonth(ResultDatePicker.SelectedDate.Value).ToString();
-                ResultTextBlock.Text = prevDateString + "\n" + nextDateString + "\n" + daysInMonthDateString + " дней до конца месяца"+"\n" ;
+                
+                string leapYearCheckDateString = "";
+                if (DateTimeClass.LeapYearCheck(ResultDatePicker.SelectedDate.Value)) { leapYearCheckDateString = "Год весокосный"; }
+                else { leapYearCheckDateString = "Год невесокосный"; }
+                string findDateString = "";
+                if (DayCountTextBlock.Text == "" || !int.TryParse(DayCountTextBlock.Text, out int number))
+                {
+                    DayCountTextBlock.BorderThickness = new Thickness(1);
+                    DayCountTextBlock.BorderBrush = Brushes.Red;
+                    
+                }
+                else
+                {
+                    DayCountTextBlock.BorderBrush = Brushes.LightGray;
+                    
+                    findDateString = DateTimeClass.FindDate(ResultDatePicker.SelectedDate.Value, Convert.ToInt32(DayCountTextBlock.Text)).ToShortDateString();
+                }
+
+                string nextDayOfMonthDateString = "";
+                if (DateTimeClass.NextDayOfMonth(ResultDatePicker.SelectedDate.Value)) { nextDayOfMonthDateString = "Это не последний день месяца"; }
+                else { nextDayOfMonthDateString = "Это последний день месяца"; }
+
+                string firstDayOfYearDateString = "";
+                if (DateTimeClass.FirstDayOfYear(ResultDatePicker.SelectedDate.Value)) { firstDayOfYearDateString = "Это первый день года"; }
+                else { firstDayOfYearDateString = "Это не первый день года"; }
+
+                ResultTextBlock.Text = prevDateString + "\n" + nextDateString + "\n" + daysInMonthDateString + " дней до конца месяца"+"\n"+ leapYearCheckDateString + "\n" + findDateString + "\n" + nextDayOfMonthDateString + "\n" + firstDayOfYearDateString;
             }
         }
     }

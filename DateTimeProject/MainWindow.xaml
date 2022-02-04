@@ -9,6 +9,10 @@
     <Grid>
         <StackPanel>
             <DatePicker x:Name="ResultDatePicker"></DatePicker>
+            <StackPanel Orientation="Horizontal">
+            <TextBlock>введите число дней</TextBlock>
+            <TextBox x:Name="DayCountTextBlock" Width="100"></TextBox>
+            </StackPanel>
             <Button Height="20" x:Name="ResultButton" Click="ResultButtonClick"></Button>
             <TextBlock x:Name="ResultTextBlock" ></TextBlock>
         </StackPanel>
