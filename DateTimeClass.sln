@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeLib", "DateTimeClass\DateTimeLib.csproj", "{ECCF1115-74D5-4F05-82A8-988AB6897264}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeLibTest", "DateTimeLibTest\DateTimeLibTest.csproj", "{97E546F7-D86C-47EB-AA8D-A9D0E21025AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeLib", "DateTimeLib\DateTimeLib.csproj", "{5023BFFC-11CB-4FCB-9805-6BF2FA1E577E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ECCF1115-74D5-4F05-82A8-988AB6897264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ECCF1115-74D5-4F05-82A8-988AB6897264}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ECCF1115-74D5-4F05-82A8-988AB6897264}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ECCF1115-74D5-4F05-82A8-988AB6897264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E546F7-D86C-47EB-AA8D-A9D0E21025AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E546F7-D86C-47EB-AA8D-A9D0E21025AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E546F7-D86C-47EB-AA8D-A9D0E21025AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E546F7-D86C-47EB-AA8D-A9D0E21025AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5023BFFC-11CB-4FCB-9805-6BF2FA1E577E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5023BFFC-11CB-4FCB-9805-6BF2FA1E577E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5023BFFC-11CB-4FCB-9805-6BF2FA1E577E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5023BFFC-11CB-4FCB-9805-6BF2FA1E577E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
